@@ -19,7 +19,7 @@ cd rag-app
 pip install -r requirements.txt
 ```
 
-## :documents: Adding Your Documents
+## :file_folder: Adding Your Documents
 
 Add your source documents to the data/ directory. The system supports the following file formats:
 
@@ -31,13 +31,15 @@ Add your source documents to the data/ directory. The system supports the follow
 
 .md (Markdown files)
 
-Example: 
+Example:
+```bash 
 rag-app/
-├── data/
-│   ├── document1.txt
-│   ├── slides.pdf
-│   └── report.docx
-
+  |- data/
+    |-- document1.txt
+    |-- slides.pdf
+    |-- report.docx
+```    
+<br/>
 
 ## :rocket: Usage
 ### :green_circle: Interactive Mode
@@ -62,14 +64,16 @@ python app.py --rebuild --query "Summarize the contents of the new files."
 ```
 
 ## :hammer_and_wrench: Project Structure
+```bash
 rag-app/
-├── app.py              # Main entry point
-├── config.py           # Configuration settings
-├── requirements.txt    # Python dependencies
-├── data/               # Add your documents here
-├── embeddings/         # Stores vector embeddings
-└── modules/            # Core logic for document loading, embedding, retrieval, generation
-
+   |- app.py              # Main entry point
+   |- config.py           # Configuration settings
+   |- requirements.txt    # Python dependencies
+   |- data/               # Add your documents here
+   |- embeddings/         # Stores vector embeddings
+   |- modules/            # Core logic for document loading, embedding, retrieval, generation
+```
+<br/>
 
 ## :mailbox_with_mail: License
 MIT License – feel free to use and adapt!
