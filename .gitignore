@@ -1,0 +1,15 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Embeddings and other generated data
+src/embeddings/
+
+# Other common ignores
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
